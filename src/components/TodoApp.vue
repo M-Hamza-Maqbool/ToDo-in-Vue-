@@ -65,7 +65,9 @@ export default {
       if (this.task.length==='0'){
           return;
       }
-    
+    if (this.task==''){
+      return ;
+    }
 
       if(this.update === null){
            this.Tasks.push({
